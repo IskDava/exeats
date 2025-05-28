@@ -1,0 +1,133 @@
+main {
+    background-color: lightgray;
+    border: 0;
+    border-radius: 10px;
+    height: 90%;
+    margin-top: 0;
+}
+#container{
+    display: flex;        
+    flex-wrap: nowrap;    
+    gap: 8px;             
+    align-items: center;  
+}
+nav {
+    background: midnightblue;
+    border-radius: 10px;
+    overflow-x: scroll;
+}
+
+.nav:not(#title, #home):hover{
+
+    color: white;
+}
+.nav#title {
+    padding: 1%;
+    color: white;
+    margin-left: 2px;
+}
+.nav {
+    padding: 3px 5px;
+    border-radius: 10px;
+    margin: 0 5px;
+    display: block;
+}
+.nav, button, .change {
+    cursor: pointer;
+}
+.nav.main, .nav.footer{
+    color: #9c9c9c;
+}
+#tst {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10vw; 
+}
+#create-exeat {
+    background-color: midnightblue;
+    color: white;
+    display: inline-block;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: auto;
+    box-shadow: 0 0 15px gray;
+}
+h1 {
+    display: inline-block;
+    margin-left: 15vw;
+    font-size: 50px;
+}
+.head {
+    margin: 10px 0 50px;
+}
+* {
+    font-family: Arial, sans-serif;
+}
+#exeats {
+    color: black;
+    background-color: whitesmoke;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+td {
+    padding: 10px;
+}
+.exeat-info {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.change#edit, .change#delete {
+    display: block;
+    height: 50%;
+    min-height: 30px;
+    width: 90%;
+    min-width: 75px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+}
+.change#delete {
+    margin-top: 40px;
+    padding: 2px;
+    background-color: hsl(0, 100%, 40%);
+    color: white;
+}
+.change#edit {
+    background-color: hsl(39, 100%, 50%);
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active, a:focus,
+a:visited {
+    color: black;
+}
+.stage {
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+    user-select: none; 
+}
+.stage.success {
+    background-color: green;
+}
+.stage.flop {
+    background-color: red;
+    cursor: help;
+}
+.stage.in-progress {
+    background-color: gray;
+}
